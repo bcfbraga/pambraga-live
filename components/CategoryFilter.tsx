@@ -23,7 +23,7 @@ export function CategoryFilter({
   onChange,
 }: CategoryFilterProps) {
   return (
-    <div className="flex gap-2 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-4 pt-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {categories.map((category) => {
         const isActive = category === activeCategory;
 
@@ -32,10 +32,10 @@ export function CategoryFilter({
             key={category}
             type="button"
             onClick={() => onChange(category)}
-            className={`min-h-10 shrink-0 rounded-full border px-4 text-sm font-semibold transition ${
+            className={`min-h-10 shrink-0 rounded-full border-2 px-4 text-sm font-bold transition ${
               isActive
-                ? "border-ink bg-ink text-pearl"
-                : "border-ink/10 bg-pearl/75 text-ink/70 hover:border-rosewood/35 hover:text-rosewood"
+                ? "border-ink bg-ink text-white"
+                : "border-champagne bg-mist text-ink hover:border-ink"
             }`}
           >
             {categoryLabel[category]}
