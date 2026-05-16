@@ -54,7 +54,8 @@ export const categories: CategoryFilter[] = [
   "Botas",
 ];
 
-// Edite esta lista para trocar produtos, imagens e links de compra.
+// Regra importante: mantenha os CTAs exatamente com os links Minha C&A enviados.
+// Eles são links de afiliado e não devem ser trocados pela URL final do produto.
 // Os campos image, price e name abaixo vieram dos metadados públicos da C&A.
 export const products: Product[] = [
   {
@@ -66,7 +67,7 @@ export const products: Product[] = [
     price: "R$ 239,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59356297/Foto-0.jpg?v=639137519302130000",
-    url: "https://www.cea.com.br/camisa-feminina-jeans-manga-longa-com-brilhos-cinza-1113420-jeans_grey/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzU5ZGUzYQ",
   },
   {
     id: 2,
@@ -78,7 +79,7 @@ export const products: Product[] = [
     price: "R$ 369,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59318677/Foto-0.jpg?v=639053963562330000",
-    url: "https://www.cea.com.br/jaqueta-feminina-de-suede-com-bolsos-marrom-1103718-marrom_e2/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2I1OTEzNA",
   },
   {
     id: 3,
@@ -90,7 +91,7 @@ export const products: Product[] = [
     price: "R$ 259,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59237204/Foto-0.jpg?v=638832861543630000",
-    url: "https://www.cea.com.br/casaco-feminino-com-bolsos-texturizado-cinza-1083062-cinza/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2I1MjYzMQ",
   },
   {
     id: 4,
@@ -102,7 +103,7 @@ export const products: Product[] = [
     price: "R$ 359,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59356155/Foto-0.jpg?v=639136859045100000",
-    url: "https://www.cea.com.br/blazer-de-alfaiataria-feminino-xadrez-bege-1103950-bege_l/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzI3OTE2NA",
   },
   {
     id: 5,
@@ -114,7 +115,7 @@ export const products: Product[] = [
     price: "R$ 179,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59354582/Foto-0.jpg?v=639134974751930000",
-    url: "https://www.cea.com.br/cardigan-feminino-de-tricot-decote-v-rosa-1081742-rosa_cl/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzJhMmMwNw",
   },
   {
     id: 6,
@@ -126,7 +127,7 @@ export const products: Product[] = [
     price: "R$ 299,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59358917/Foto-0.jpg?v=639142807967830000",
-    url: "https://www.cea.com.br/jaqueta-unissex-de-sarja-gola-funnel-neck-mindset-working-title-bege-1113929-kaki/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2Y5ZDhmYw",
   },
   {
     id: 7,
@@ -138,7 +139,7 @@ export const products: Product[] = [
     price: "R$ 259,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59352831/Foto-0.jpg?v=639126504172370000",
-    url: "https://www.cea.com.br/jaqueta-feminina-xadrez-azul-1108417-azul_marin/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0Xzc5NDFiOA",
   },
   {
     id: 8,
@@ -150,7 +151,7 @@ export const products: Product[] = [
     price: "R$ 379,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59341925/Foto-0.jpg?v=639102323774400000",
-    url: "https://www.cea.com.br/jaqueta-feminina-de-pelucia-bege-1103182-bege_l/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2U5YjcwMw",
   },
   {
     id: 9,
@@ -161,7 +162,7 @@ export const products: Product[] = [
     size: "Tamanho · M",
     availability: "oos",
     image: "https://cea.vtexassets.com/arquivos/ids/59318550/Foto-0.jpg?v=639059921312230000",
-    url: "https://www.cea.com.br/casaco-feminino-texturizado-vinho-1102848-vinho_escu/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzFjOTFiYg",
   },
   {
     id: 10,
@@ -173,7 +174,7 @@ export const products: Product[] = [
     price: "R$ 279,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59339989/Foto-0.jpg?v=639099702826500000",
-    url: "https://www.cea.com.br/jaqueta-feminina-de-veludo-cotele-com-bolsos-cinza-1103965-cinza/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzljM2RkMQ",
   },
   {
     id: 11,
@@ -185,7 +186,7 @@ export const products: Product[] = [
     price: "R$ 259,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59341481/Foto-0.jpg?v=639101465295800000",
-    url: "https://www.cea.com.br/jaqueta-feminina-texturizada-bege-1103822-beige_7/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzRjNjViNw",
   },
   {
     id: 12,
@@ -197,7 +198,7 @@ export const products: Product[] = [
     price: "R$ 249,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59358886/Foto-0.jpg?v=639142772959030000",
-    url: "https://www.cea.com.br/calca-barrel-unissex-jeans-com-recortes-mindset-working-title-azul-1113897-jeans-md/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2Y0MzFmNQ",
   },
   {
     id: 13,
@@ -209,7 +210,7 @@ export const products: Product[] = [
     price: "R$ 249,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59358898/Foto-0.jpg?v=639142787272900000",
-    url: "https://www.cea.com.br/calca-baggy-unissex-jeans-cintura-alta-mindset-working-title-azul-1113896-jeans_cl/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzQwYmYyMQ",
   },
   {
     id: 14,
@@ -221,7 +222,7 @@ export const products: Product[] = [
     price: "R$ 199,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59353188/Foto-0.jpg?v=639128143184430000",
-    url: "https://www.cea.com.br/calca-baggy-feminina-de-sarja-cintura-alta-bege-1113864-cru_5/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0Xzg5ZGUzNQ",
   },
   {
     id: 15,
@@ -232,7 +233,7 @@ export const products: Product[] = [
     price: "R$ 239,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59354531/Foto-0.jpg?v=639131711337030000",
-    url: "https://www.cea.com.br/calca-de-alfaiataria-feminina-xadrez-com-lurex-bege-1103948-bege_l/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzI2YzRhNQ",
   },
   {
     id: 16,
@@ -244,7 +245,7 @@ export const products: Product[] = [
     price: "R$ 199,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59342273/Foto-0.jpg?v=639104714314530000",
-    url: "https://www.cea.com.br/calca-baggy-de-alfaiataria-feminina-com-pregas-marrom-1103348-caramelo/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzM1ZTdhYg",
   },
   {
     id: 17,
@@ -256,7 +257,7 @@ export const products: Product[] = [
     price: "R$ 199,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59335212/Foto-0.jpg?v=639090198351200000",
-    url: "https://www.cea.com.br/calca-de-alfaiataria-wide-leg-feminina-com-pregas-cinza--1103346-cinza_mes1/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzA3YTM5ZA",
   },
   {
     id: 18,
@@ -268,7 +269,7 @@ export const products: Product[] = [
     price: "R$ 229,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59341931/Foto-0.jpg?v=639102324770430000",
-    url: "https://www.cea.com.br/calca-reta-feminina-com-pregas-xadrez-azul--1108407-azul_marin/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2E0NjE2NQ",
   },
   {
     id: 19,
@@ -280,7 +281,7 @@ export const products: Product[] = [
     price: "R$ 199,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59341632/Foto-0.jpg?v=639102158746500000",
-    url: "https://www.cea.com.br/saia-midi-feminina-de-sarja-resinada-marrom-1113411-marrom_e2/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2VkZTg5Mw",
   },
   {
     id: 20,
@@ -292,7 +293,7 @@ export const products: Product[] = [
     price: "R$ 199,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59356370/Foto-0.jpg?v=639137526417900000",
-    url: "https://www.cea.com.br/minissaia-feminina-com-cinto-texturizada-cinza-1102797-cinza_md/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzY5NDM3MQ",
   },
   {
     id: 21,
@@ -304,7 +305,7 @@ export const products: Product[] = [
     price: "R$ 159,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59356138/Foto-0.jpg?v=639136857114770000",
-    url: "https://www.cea.com.br/saia-midi-feminina-acetinada-preta-1103930-preto/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2E0ZjZmZA",
   },
   {
     id: 22,
@@ -316,7 +317,7 @@ export const products: Product[] = [
     price: "R$ 149,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59318805/Foto-0.jpg?v=639056395658000000",
-    url: "https://www.cea.com.br/sueter-amplo-feminino-de-tricot-canelado-off-white-1103427-off_white/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzU4YTQzNg",
   },
   {
     id: 23,
@@ -328,7 +329,7 @@ export const products: Product[] = [
     price: "R$ 179,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59318605/Foto-0.jpg?v=639059849934200000",
-    url: "https://www.cea.com.br/sueter-feminino-de-tricot-com-gola-manga-longa-listrado-marrom-1087386-marrom_esc/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzM4OWM1NA",
   },
   {
     id: 24,
@@ -340,7 +341,7 @@ export const products: Product[] = [
     price: "R$ 159,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59353731/Foto-0.jpg?v=639130773891800000",
-    url: "https://www.cea.com.br/blusa-ombro-unico-feminina-risca-de-giz-vinho-1108343-vinho/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2ExOGU2OA",
   },
   {
     id: 25,
@@ -352,7 +353,7 @@ export const products: Product[] = [
     price: "R$ 179,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/58568863/Foto-0.jpg?v=638494670849400000",
-    url: "https://www.cea.com.br/sueter-de-tricot-gola-alta-azul-1045832-azul-md/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2M4YjRkZA",
   },
   {
     id: 26,
@@ -364,7 +365,7 @@ export const products: Product[] = [
     price: "R$ 119,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59350031/Foto-0.jpg?v=639118552508200000",
-    url: "https://www.cea.com.br/blusa-feminina-de-tricot-manga-curta-texturizada-rosa-1103544-rosa/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzcxZWY2MA",
   },
   {
     id: 27,
@@ -376,7 +377,7 @@ export const products: Product[] = [
     price: "R$ 219,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59322941/Foto-0.jpg?v=639063307756630000",
-    url: "https://www.cea.com.br/bota-cano-curto-bico-fino-salto-grosso-via-uno-bege-1110234-cinza/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2UzNzkxMg",
   },
   {
     id: 28,
@@ -388,7 +389,7 @@ export const products: Product[] = [
     price: "R$ 219,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59354627/Foto-0.jpg?v=639134981775930000",
-    url: "https://www.cea.com.br/bota-cano-baixo-bico-fino-marrom-1110276-marrom_esc/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzVlY2ZhNA",
   },
   {
     id: 29,
@@ -400,6 +401,6 @@ export const products: Product[] = [
     price: "R$ 299,99",
     availability: "instock",
     image: "https://cea.vtexassets.com/arquivos/ids/59322321/Foto-0.jpg?v=639063194753600000",
-    url: "https://www.cea.com.br/bota-feminina-cano-medio-salto-kitten-preto-1110910-preto/p?utm_source=mais&utm_medium=minhacea&utm_campaign=pambraga",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0XzkzMDYyYw",
   },
 ];
