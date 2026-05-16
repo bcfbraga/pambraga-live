@@ -66,9 +66,11 @@ export function ProductCard({ product }: ProductCardProps) {
               </span>
             ) : null}
           </div>
-          <span className="mt-auto inline-flex items-center justify-between rounded-full bg-wheat px-3 py-2 text-[0.68rem] font-extrabold uppercase tracking-[0.1em] text-ink transition group-hover:bg-ink group-hover:text-white">
-            Ver na C&A
-            <span aria-hidden="true">→</span>
+          <span className="mt-auto inline-flex min-h-12 items-center justify-between rounded-full bg-[#EADFC8] px-5 py-3 text-[0.78rem] font-extrabold uppercase tracking-[0.18em] text-ink transition group-hover:bg-[#E3D5BA]">
+            VER NA C&A
+            <span className="text-2xl leading-none" aria-hidden="true">
+              →
+            </span>
           </span>
         </div>
       </a>
