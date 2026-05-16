@@ -13,6 +13,8 @@ const categoryLabel: Record<Product["category"], string> = {
 };
 
 export function ProductCard({ product }: ProductCardProps) {
+  const isSoldOut = product.availability === "oos";
+
   return (
     <article className="group overflow-hidden rounded-[1.4rem] border border-ink/10 bg-pearl shadow-[0_10px_35px_rgba(72,52,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-rosewood/25 hover:shadow-soft">
       <div className="relative aspect-[4/5] overflow-hidden bg-mist">
@@ -37,6 +39,16 @@ export function ProductCard({ product }: ProductCardProps) {
         <h3 className="mt-2 min-h-14 text-lg font-semibold leading-snug text-ink">
           {product.name}
         </h3>
+        <div className="mt-3 flex min-h-6 flex-wrap items-center gap-2">
+          {product.price ? (
+            <p className="text-base font-bold text-ink">{product.price}</p>
+          ) : null}
+          {isSoldOut ? (
+            <span className="rounded-full bg-rosewood/10 px-2.5 py-1 text-xs font-semibold text-rosewood">
+              Esgotado na C&A
+            </span>
+          ) : null}
+        </div>
         {product.size ? (
           <p className="mt-2 text-sm text-ink/58">{product.size}</p>
         ) : (
