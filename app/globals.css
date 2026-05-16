@@ -1,22 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color: #241f1f;
-  background: #f7f3ef;
+  --cea-bg: #f8f2e9;
+  --cea-bg-soft: #efe5d5;
+  --cea-bg-elev: #e8dcc6;
+  --cea-cream: #f4e4d1;
+  --cea-text: #1a1410;
+  --cea-text-soft: #3a2e26;
+  --cea-text-muted: #7a6b5c;
+  --cea-border: #d9ccb6;
+  --cea-border-strong: #b8a582;
+  --cea-accent: #8b4513;
+  --cea-accent-dark: #5c2e0b;
+  --cea-cold-accent: #2c3e50;
+  color: var(--cea-text);
+  background: var(--cea-bg);
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--cea-bg);
 }
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top left, rgba(216, 189, 165, 0.22), transparent 34rem),
-    linear-gradient(180deg, #fffdf9 0%, #f7f3ef 42%, #f4ede7 100%);
-  color: #241f1f;
+  background: var(--cea-bg);
+  color: var(--cea-text);
+  font-family: Manrope, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.025em;
 }
 
 button,
@@ -25,6 +48,19 @@ a {
 }
 
 ::selection {
-  background: #7c3f44;
-  color: #fffdf9;
+  background: var(--cea-accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cea-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cea-border-strong);
+  border-radius: 999px;
 }
