@@ -12,57 +12,66 @@ const categoryLabel: Record<Product["category"], string> = {
   Botas: "Botas",
 };
 
+const categoryClass: Record<Product["category"], string> = {
+  "Terceira Peça": "bg-rosewood/90",
+  Calças: "bg-pine/90",
+  Saias: "bg-[#784A32]/90",
+  Blusas: "bg-[#A8826A]/90",
+  Botas: "bg-cocoa/90",
+};
+
 export function ProductCard({ product }: ProductCardProps) {
   const isSoldOut = product.availability === "oos";
 
   return (
-    <article className="group overflow-hidden rounded-[1.4rem] border border-ink/10 bg-pearl shadow-[0_10px_35px_rgba(72,52,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-rosewood/25 hover:shadow-soft">
-      <div className="relative aspect-[4/5] overflow-hidden bg-mist">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-        />
-        <div className="absolute left-4 top-4 flex items-center gap-2">
-          <span className="rounded-full bg-pearl/95 px-3 py-1 text-xs font-semibold text-rosewood shadow-sm">
+    <article className="group flex overflow-hidden rounded-[18px] border border-champagne bg-mist transition duration-300 hover:-translate-y-1 hover:border-ink hover:shadow-soft">
+      <a
+        href={product.url}
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+        className="flex w-full flex-col text-inherit no-underline"
+      >
+        <div className="relative aspect-[4/5] overflow-hidden bg-sand">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="h-full w-full bg-sand object-cover transition duration-700 group-hover:scale-[1.04]"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(0,0,0,0.18))]" />
+          <span
+            className={`absolute left-2 top-2 rounded-full px-2.5 py-1 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-white shadow-sm ${categoryClass[product.category]}`}
+          >
             {categoryLabel[product.category]}
           </span>
-          <span className="rounded-full bg-ink px-3 py-1 text-xs font-semibold text-pearl shadow-sm">
+          <span className="absolute right-2 top-2 flex h-6 min-w-6 items-center justify-center rounded-full bg-white/90 px-1.5 text-[0.62rem] font-extrabold text-ink shadow-sm backdrop-blur">
             {product.number}
           </span>
         </div>
-      </div>
-      <div className="p-5">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-clay">
-          {product.brand}
-        </p>
-        <h3 className="mt-2 min-h-14 text-lg font-semibold leading-snug text-ink">
-          {product.name}
-        </h3>
-        <div className="mt-3 flex min-h-6 flex-wrap items-center gap-2">
-          {product.price ? (
-            <p className="text-base font-bold text-ink">{product.price}</p>
-          ) : null}
-          {isSoldOut ? (
-            <span className="rounded-full bg-rosewood/10 px-2.5 py-1 text-xs font-semibold text-rosewood">
-              Esgotado na C&A
-            </span>
-          ) : null}
+        <div className="flex flex-1 flex-col gap-1.5 p-3 sm:p-3.5">
+          <h3 className="line-clamp-2 min-h-[2.3rem] text-sm font-bold leading-snug tracking-[-0.005em] text-ink">
+            {product.name}
+          </h3>
+          {product.size ? (
+            <p className="text-xs font-semibold text-clay">{product.size}</p>
+          ) : (
+            <p className="text-xs font-semibold text-clay/70">Favorito da live</p>
+          )}
+          <div className="mt-1 flex min-h-6 flex-wrap items-center gap-2">
+            {product.price ? (
+              <p className="text-sm font-extrabold text-ink">{product.price}</p>
+            ) : null}
+            {isSoldOut ? (
+              <span className="rounded-full bg-cream px-2 py-1 text-[0.65rem] font-extrabold text-cocoa">
+                Esgotado
+              </span>
+            ) : null}
+          </div>
+          <span className="mt-auto inline-flex items-center justify-between rounded-full bg-wheat px-3 py-2 text-[0.68rem] font-extrabold uppercase tracking-[0.1em] text-ink transition group-hover:bg-ink group-hover:text-white">
+            Ver na C&A
+            <span aria-hidden="true">→</span>
+          </span>
         </div>
-        {product.size ? (
-          <p className="mt-2 text-sm text-ink/58">{product.size}</p>
-        ) : (
-          <p className="mt-2 text-sm text-ink/35">Favorito da live</p>
-        )}
-        <a
-          href={product.url}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-rosewood px-5 py-3 text-sm font-semibold text-pearl transition hover:bg-ink"
-        >
-          Ver na loja
-        </a>
-      </div>
+      </a>
     </article>
   );
 }
