@@ -5,12 +5,11 @@ type ProductCardProps = {
 };
 
 const categoryLabel: Record<Product["category"], string> = {
-  Vestidos: "Vestidos",
-  Blusas: "Blusas",
+  "Terceira Peça": "Terceira Peça",
   Calças: "Calças",
-  Acessórios: "Acessórios",
-  Sapatos: "Sapatos",
-  Outros: "Outros",
+  Saias: "Saias",
+  Blusas: "Blusas",
+  Botas: "Botas",
 };
 
 export function ProductCard({ product }: ProductCardProps) {
