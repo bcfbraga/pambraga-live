@@ -22,18 +22,18 @@ export function ProductGrid({ products, influencerName }: ProductGridProps) {
   }, [activeCategory, products]);
 
   return (
-    <section id="produtos" className="px-5 py-10 sm:px-8 lg:px-10">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <section id="produtos" className="px-5 py-9 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-[720px]">
+        <div className="mb-4 flex items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-clay">
+            <p className="text-[0.68rem] font-extrabold uppercase tracking-[0.22em] text-cocoa">
               Vitrine da live
             </p>
-            <h2 className="mt-2 font-display text-4xl leading-tight text-ink sm:text-5xl">
+            <h2 className="mt-2 font-display text-[clamp(1.65rem,6vw,2rem)] font-extrabold leading-tight tracking-[-0.03em] text-ink">
               As favoritas da {influencerName}
             </h2>
           </div>
-          <p className="text-sm font-semibold text-ink/60">
+          <p className="shrink-0 pb-1 text-sm font-bold text-clay">
             {filteredProducts.length} de {products.length}
           </p>
         </div>
@@ -44,7 +44,7 @@ export function ProductGrid({ products, influencerName }: ProductGridProps) {
           onChange={setActiveCategory}
         />
 
-        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
