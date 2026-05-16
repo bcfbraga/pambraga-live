@@ -37,33 +37,29 @@ export function ShareBlock() {
   }
 
   return (
-    <section className="px-5 py-12 sm:px-8 lg:px-10">
-      <div className="mx-auto max-w-6xl rounded-[2rem] border border-ink/10 bg-ink px-6 py-8 text-pearl shadow-soft sm:px-8 md:flex md:items-center md:justify-between md:gap-8">
-        <div>
-          <h2 className="font-display text-4xl leading-tight">
-            Marca uma amiga que vai amar
-          </h2>
-          <p className="mt-3 max-w-xl text-sm leading-6 text-pearl/72 sm:text-base">
-            Manda essa vitrine pro grupo das amigas: todos os links em um só lugar.
-          </p>
-        </div>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-0">
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex min-h-11 items-center justify-center rounded-full bg-pearl px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-champagne"
-          >
-            Compartilhar no WhatsApp
-          </a>
-          <button
-            type="button"
-            onClick={copyCurrentUrl}
-            className="inline-flex min-h-11 items-center justify-center rounded-full border border-pearl/20 px-5 py-3 text-sm font-semibold text-pearl transition hover:-translate-y-0.5 hover:bg-pearl/10"
-          >
-            {copied ? "Link copiado" : "Copiar link"}
-          </button>
-        </div>
+    <section className="mx-auto max-w-[720px] border-t border-champagne px-5 pb-12 pt-10 text-center sm:px-8">
+      <h2 className="font-display text-[clamp(1.25rem,5vw,1.65rem)] font-extrabold tracking-[-0.025em] text-ink">
+        Marca uma amiga que vai amar
+      </h2>
+      <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-clay">
+        Manda essa vitrine pro grupo das amigas: todos os links em um só lugar.
+      </p>
+      <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex min-h-12 items-center justify-center rounded-full bg-whatsapp px-6 py-3 text-xs font-extrabold uppercase tracking-[0.06em] text-white shadow-[0_12px_28px_rgba(37,211,102,0.32)] transition hover:-translate-y-0.5 hover:bg-[#1FB957]"
+        >
+          Compartilhar no WhatsApp
+        </a>
+        <button
+          type="button"
+          onClick={copyCurrentUrl}
+          className="inline-flex min-h-12 items-center justify-center rounded-full border-2 border-champagne bg-mist px-6 py-3 text-xs font-bold uppercase tracking-[0.06em] text-ink transition hover:-translate-y-0.5 hover:border-ink"
+        >
+          {copied ? "Link copiado" : "Copiar link"}
+        </button>
       </div>
     </section>
   );
