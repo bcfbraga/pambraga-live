@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Live Fashion Hub",
-  description: "Vitrine de links para produtos indicados em live de moda.",
+  title: "Live C&A · Pam Braga",
+  description: "Vitrine de links para produtos indicados na live da Pam Braga com C&A.",
 };
 
 export default function RootLayout({
