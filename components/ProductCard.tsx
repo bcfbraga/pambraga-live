@@ -66,7 +66,7 @@ export function ProductCard({ product }: ProductCardProps) {
               </span>
             ) : null}
           </div>
-          <span className="mt-auto inline-flex min-h-12 items-center justify-between rounded-full bg-[#EADFC8] px-5 py-3 text-[0.78rem] font-extrabold uppercase tracking-[0.18em] text-ink transition group-hover:bg-[#E3D5BA]">
+          <span className="mt-auto inline-flex min-h-12 items-center justify-between rounded-full bg-[#EADFC8] px-5 py-3 text-[0.78rem] font-extrabold uppercase tracking-[0.18em] text-ink transition group-hover:bg-ink group-hover:text-white">
             VER NA C&A
             <span className="text-2xl leading-none" aria-hidden="true">
               →
