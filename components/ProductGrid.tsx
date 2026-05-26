@@ -10,7 +10,7 @@ type ProductGridProps = {
   influencerName: string;
 };
 
-export function ProductGrid({ products, influencerName }: ProductGridProps) {
+export function ProductGrid({ products }: ProductGridProps) {
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("Tudo");
 
   const filteredProducts = useMemo(() => {
@@ -30,7 +30,7 @@ export function ProductGrid({ products, influencerName }: ProductGridProps) {
               Vitrine da live
             </p>
             <h2 className="mt-2 font-display text-[clamp(1.65rem,6vw,2rem)] font-extrabold leading-tight tracking-[-0.03em] text-ink">
-              As favoritas da {influencerName}
+              Peças Mindset que eu escolhi para vc
             </h2>
           </div>
           <p className="shrink-0 pb-1 text-sm font-bold text-clay">
