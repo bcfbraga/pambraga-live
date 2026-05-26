@@ -15,16 +15,11 @@ export function LiveBar({ liveInfo }: LiveBarProps) {
           Live
         </span>
 
-        <div className="min-w-0">
-          <p className="text-xs font-extrabold uppercase tracking-[0.34em] text-white/72 sm:text-sm">
-            LIVE · ÓTIMO INVERNO C&A
-          </p>
-          <p className="mt-1 text-lg font-extrabold leading-snug text-white sm:text-xl">
-            {liveInfo.liveDate} · {liveInfo.liveTime}
-            <span className="mx-2 text-white/35">·</span>
-            <span className="font-semibold text-white/72">Ao vivo no Instagram da Pam</span>
-          </p>
-        </div>
+        <p className="min-w-0 text-lg font-extrabold leading-snug text-white sm:text-xl">
+          {liveInfo.liveDate} · {liveInfo.liveTime}
+          <span className="mx-2 text-white/35">·</span>
+          <span className="font-semibold text-white/72">Ao vivo no Instagram da Pam</span>
+        </p>
       </div>
     </aside>
   );
