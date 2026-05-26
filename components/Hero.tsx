@@ -9,12 +9,11 @@ type HeroProps = {
 };
 
 const heroImageUrl = "https://camaleaohub.com.br/pambragacea/hero-pam-bg.jpg";
-const shareText =
-  "Olha as 29 peças favoritas da Pam Braga na Live Ótimo Inverno C&A. Link direto pra cada produto:";
 
 export function Hero({ liveInfo, productCount }: HeroProps) {
   const [pageUrl, setPageUrl] = useState("");
   const [copyLabel, setCopyLabel] = useState("Copiar link");
+  const shareText = `Olha as ${productCount} peças favoritas da Pam Braga na Live Ótimo Inverno C&A. Link direto pra cada produto:`;
 
   useEffect(() => {
     setPageUrl(window.location.href);
@@ -92,7 +91,7 @@ export function Hero({ liveInfo, productCount }: HeroProps) {
               <span className="text-3xl leading-none text-[#6EA046]" aria-hidden="true">
                 ✓
               </span>
-              <span>Casacos, calças, suéteres e botas</span>
+              <span>Jaquetas, blusas, vestidos e calças</span>
             </li>
           </ul>
 
