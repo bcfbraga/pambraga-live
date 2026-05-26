@@ -18,6 +18,7 @@ const categoryClass: Record<Product["category"], string> = {
 
 export function ProductCard({ product }: ProductCardProps) {
   const isSoldOut = product.availability === "oos";
+  const colorLabel = product.colors?.length ? `Cor · ${product.colors.join(", ")}` : null;
 
   return (
     <article className="group flex overflow-hidden rounded-[18px] border border-champagne bg-mist transition duration-300 hover:-translate-y-1 hover:border-ink hover:shadow-soft">
@@ -47,11 +48,16 @@ export function ProductCard({ product }: ProductCardProps) {
           <h3 className="line-clamp-2 min-h-[2.3rem] text-sm font-bold leading-snug tracking-[-0.005em] text-ink">
             {product.name}
           </h3>
-          {product.size ? (
-            <p className="text-xs font-semibold text-clay">{product.size}</p>
-          ) : (
-            <p className="text-xs font-semibold text-clay/70">Favorito da live</p>
-          )}
+          <div className="min-h-[2.25rem] space-y-0.5">
+            {product.size ? (
+              <p className="text-xs font-semibold text-clay">{product.size}</p>
+            ) : (
+              <p className="text-xs font-semibold text-clay/70">Favorito da live</p>
+            )}
+            {colorLabel ? (
+              <p className="text-xs font-semibold text-clay/80">{colorLabel}</p>
+            ) : null}
+          </div>
           <div className="mt-1 flex min-h-6 flex-wrap items-center gap-2">
             {product.price ? (
               <p className="text-sm font-extrabold text-ink">{product.price}</p>
