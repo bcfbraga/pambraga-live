@@ -34,15 +34,17 @@ export function ProductCard({ product }: ProductCardProps) {
             alt={product.name}
             className="h-full w-full bg-sand object-cover transition duration-700 group-hover:scale-[1.04]"
           />
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(0,0,0,0.18))]" />
-          <span
-            className={`absolute left-2 top-2 rounded-full px-2.5 py-1 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-white shadow-sm ${categoryClass[product.category]}`}
-          >
-            {categoryLabel[product.category]}
-          </span>
-          <span className="absolute right-2 top-2 flex h-6 min-w-6 items-center justify-center rounded-full bg-white/90 px-1.5 text-[0.62rem] font-extrabold text-ink shadow-sm backdrop-blur">
-            {product.number}
-          </span>
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_62%,rgba(0,0,0,0.22))]" />
+          <div className="absolute inset-x-2 bottom-2 flex items-end justify-between gap-2">
+            <span
+              className={`rounded-full px-2.5 py-1 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-white shadow-sm ${categoryClass[product.category]}`}
+            >
+              {categoryLabel[product.category]}
+            </span>
+            <span className="flex h-7 min-w-7 items-center justify-center rounded-full bg-white/92 px-2 text-[0.68rem] font-extrabold text-ink shadow-sm backdrop-blur">
+              {product.number}
+            </span>
+          </div>
         </div>
         <div className="flex flex-1 flex-col gap-1.5 p-3 sm:p-3.5">
           <h3 className="line-clamp-2 min-h-[2.3rem] text-sm font-bold leading-snug tracking-[-0.005em] text-ink">
