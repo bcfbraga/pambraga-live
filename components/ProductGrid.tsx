@@ -27,7 +27,7 @@ export function ProductGrid({ products }: ProductGridProps) {
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
             <p className="text-[0.68rem] font-extrabold uppercase tracking-[0.22em] text-cocoa">
-              Vitrine da live
+              Vitrine @pambraga
             </p>
             <h2 className="mt-2 font-display text-[clamp(1.65rem,6vw,2rem)] font-extrabold leading-tight tracking-[-0.03em] text-ink">
               escolhidos pra você ;)
