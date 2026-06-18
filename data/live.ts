@@ -1,4 +1,4 @@
-export type ProductCategory = "Jaquetas" | "Blusas" | "Calças";
+export type ProductCategory = "Jaquetas" | "Casacos" | "Blusas" | "Calças" | "Brincos";
 
 export type CategoryFilter = "Tudo" | ProductCategory;
 
@@ -41,7 +41,7 @@ export const liveInfo: LiveInfo = {
 };
 
 // Edite as categorias aqui caso a live tenha outra organização.
-export const categories: CategoryFilter[] = ["Tudo", "Jaquetas", "Blusas", "Calças"];
+export const categories: CategoryFilter[] = ["Tudo", "Jaquetas", "Casacos", "Blusas", "Calças", "Brincos"];
 
 // Regra importante: mantenha os CTAs exatamente com os links Minha C&A enviados.
 // Eles são links de afiliado e não devem ser trocados pela URL final do produto.
