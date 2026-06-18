@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { categories, type CategoryFilter, type Product } from "@/data/live";
+import { type CategoryFilter, type Product } from "@/data/live";
 import { CategoryFilter as CategoryFilterButtons } from "@/components/CategoryFilter";
 import { ProductCard } from "@/components/ProductCard";
 
@@ -12,6 +12,11 @@ type ProductGridProps = {
 
 export function ProductGrid({ products }: ProductGridProps) {
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("Tudo");
+
+  const liveCategories = useMemo<CategoryFilter[]>(() => {
+    const uniqueCategories = Array.from(new Set(products.map((product) => product.category)));
+    return ["Tudo", ...uniqueCategories];
+  }, [products]);
 
   const filteredProducts = useMemo(() => {
     if (activeCategory === "Tudo") {
@@ -39,7 +44,7 @@ export function ProductGrid({ products }: ProductGridProps) {
         </div>
 
         <CategoryFilterButtons
-          categories={categories}
+          categories={liveCategories}
           activeCategory={activeCategory}
           onChange={setActiveCategory}
         />
