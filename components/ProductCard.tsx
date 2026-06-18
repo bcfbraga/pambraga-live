@@ -6,14 +6,18 @@ type ProductCardProps = {
 
 const categoryLabel: Record<Product["category"], string> = {
   Jaquetas: "Jaquetas",
+  Casacos: "Casacos",
   Blusas: "Blusas",
   Calças: "Calças",
+  Brincos: "Brincos",
 };
 
 const categoryClass: Record<Product["category"], string> = {
   Jaquetas: "bg-rosewood/90",
+  Casacos: "bg-rosewood/90",
   Blusas: "bg-[#A8826A]/90",
   Calças: "bg-pine/90",
+  Brincos: "bg-cocoa/90",
 };
 
 export function ProductCard({ product }: ProductCardProps) {
