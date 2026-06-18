@@ -11,8 +11,10 @@ type CategoryFilterProps = {
 const categoryLabel: Record<CategoryFilterType, string> = {
   Tudo: "Tudo",
   Jaquetas: "Jaquetas",
+  Casacos: "Casacos",
   Blusas: "Blusas",
   Calças: "Calças",
+  Brincos: "Brincos",
 };
 
 export function CategoryFilter({
