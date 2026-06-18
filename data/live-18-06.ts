@@ -342,4 +342,14 @@ export const live1806Products: Product[] = [
     image: "https://cea.vtexassets.com/arquivos/ids/59345365/Foto-0.jpg?v=639110749237530000",
     url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2UyZTM2Yw",
   },
+  {
+    id: 31,
+    number: "31",
+    category: "Calças",
+    brand: "C&A",
+    name: "Calça Wide Leg Slim Jeans Cintura Alta Azul",
+    colors: ["Azul"],
+    image: "https://cea.vtexassets.com/arquivos/ids/59367516/Foto-0.jpg?v=639166221646170000",
+    url: "https://minhacea.cea.com.br/?lcea=MTU0Njc0X2ZmMzkyZg",
+  },
 ];
