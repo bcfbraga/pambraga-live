@@ -94,7 +94,7 @@ export const live1806Products: Product[] = [
   {
     id: 8,
     number: "08",
-    category: "Blusas",
+    category: "Casacos",
     brand: "C&A",
     name: "cardigan de tricot xadrez argyle cinza",
     size: "Tamanho · M",
@@ -105,7 +105,7 @@ export const live1806Products: Product[] = [
   {
     id: 9,
     number: "09",
-    category: "Blusas",
+    category: "Casacos",
     brand: "C&A",
     name: "cardigan de tricot xadrez argyle azul",
     colors: ["Azul"],
@@ -115,7 +115,7 @@ export const live1806Products: Product[] = [
   {
     id: 10,
     number: "10",
-    category: "Blusas",
+    category: "Casacos",
     brand: "C&A",
     name: "cardigan de tricot geométrico mindset colorido",
     size: "Tamanho · P",
@@ -236,7 +236,7 @@ export const live1806Products: Product[] = [
   {
     id: 21,
     number: "21",
-    category: "Jaquetas",
+    category: "Casacos",
     brand: "C&A",
     name: "jaqueta balonê oversized de suede marrom",
     size: "Tamanho · M",
@@ -247,7 +247,7 @@ export const live1806Products: Product[] = [
   {
     id: 22,
     number: "22",
-    category: "Jaquetas",
+    category: "Casacos",
     brand: "C&A",
     name: "jaqueta com viscose gola alta verde",
     size: "Tamanho · M",
@@ -258,7 +258,7 @@ export const live1806Products: Product[] = [
   {
     id: 23,
     number: "23",
-    category: "Jaquetas",
+    category: "Casacos",
     brand: "C&A",
     name: "jaqueta balonê texturizada bege",
     size: "Tamanho · G",
@@ -269,7 +269,7 @@ export const live1806Products: Product[] = [
   {
     id: 24,
     number: "24",
-    category: "Jaquetas",
+    category: "Casacos",
     brand: "C&A",
     name: "jaqueta biker de poliuretano preta",
     size: "Tamanho · M",
@@ -280,7 +280,7 @@ export const live1806Products: Product[] = [
   {
     id: 25,
     number: "25",
-    category: "Jaquetas",
+    category: "Casacos",
     brand: "C&A",
     name: "jaqueta bomber cropped funnel neck mindset vinho",
     size: "Tamanho · M",
@@ -291,7 +291,7 @@ export const live1806Products: Product[] = [
   {
     id: 26,
     number: "26",
-    category: "Blusas",
+    category: "Brincos",
     brand: "C&A",
     name: "brinco perolado resinado dourado",
     colors: ["Dourado"],
