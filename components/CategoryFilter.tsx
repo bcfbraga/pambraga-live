@@ -14,7 +14,12 @@ const categoryLabel: Record<CategoryFilterType, string> = {
   Casacos: "Casacos",
   Blusas: "Blusas",
   Calças: "Calças",
+  Saias: "Saias",
+  Vestidos: "Vestidos",
+  Cintos: "Cintos",
   Brincos: "Brincos",
+  Acessórios: "Acessórios",
+  Outros: "Outros",
 };
 
 export function CategoryFilter({
