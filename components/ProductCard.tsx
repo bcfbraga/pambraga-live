@@ -9,7 +9,12 @@ const categoryLabel: Record<Product["category"], string> = {
   Casacos: "Casacos",
   Blusas: "Blusas",
   Calças: "Calças",
+  Saias: "Saias",
+  Vestidos: "Vestidos",
+  Cintos: "Cintos",
   Brincos: "Brincos",
+  Acessórios: "Acessórios",
+  Outros: "Outros",
 };
 
 const categoryClass: Record<Product["category"], string> = {
@@ -17,7 +22,12 @@ const categoryClass: Record<Product["category"], string> = {
   Casacos: "bg-rosewood/90",
   Blusas: "bg-[#A8826A]/90",
   Calças: "bg-pine/90",
+  Saias: "bg-[#7E5F83]/90",
+  Vestidos: "bg-[#7E5F83]/90",
+  Cintos: "bg-cocoa/90",
   Brincos: "bg-cocoa/90",
+  Acessórios: "bg-cocoa/90",
+  Outros: "bg-ink/80",
 };
 
 export function ProductCard({ product }: ProductCardProps) {
